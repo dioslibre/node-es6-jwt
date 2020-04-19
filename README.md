@@ -11,11 +11,11 @@
 ![](https://img.shields.io/badge/sequelize-✓-blue.svg)
 ![](https://img.shields.io/badge/mocha-✓-blue.svg)
 
-***
+---
 
 <h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
 
-***
+---
 
 # File structure
 
@@ -52,7 +52,7 @@ node-es6-jwt/
 ├── test/
 │   ├── auth.test.js
 │   └── user.test.js
-│   
+│
 ├── .eslintrc                     * ESLint configuration file
 ├── .gitignore                    * Example git ignore file
 ├── index.js                      * Entry point of our Node's app
@@ -70,69 +70,69 @@ I have a great introduction to JWT in one of my other repositories, click [here]
 
 1. Make sure you have the latest stable version of Node.js installed
 
-  ```
-  $ sudo npm cache clean -f
-  $ sudo npm install -g n
-  $ sudo n stable
-  ```
-  
+```
+$ sudo npm cache clean -f
+$ sudo npm install -g n
+$ sudo n stable
+```
+
 2. Configure your database and jsonwebtoken in `config/env`. E.g.:
 
-  ```javascript
-  module.exports = {
-    mysql: {
-      host: 'localhost',
-      port: 3306,
-      database: 'jwt_dev',
-      username: 'root',
-      password: 'root',
-    },
-    jwt: {
-      jwtSecret: '$eCrEt',
-      jwtDuration: '2 hours',
-    }
-  };
-  ```
+```javascript
+module.exports = {
+  postgres: {
+    host: "localhost",
+    port: 5432,
+    database: "sig-habous",
+    username: "root",
+    password: "root",
+  },
+  jwt: {
+    jwtSecret: "$eCrEt",
+    jwtDuration: "2 hours",
+  },
+};
+```
 
 3. Fork this repository and clone it
-  
-  ```
-  $ git clone https://github.com/<your-user>/node-es6-jwt
-  ```
-  
-4. Navigate into the folder  
 
-  ```
-  $ cd node-es6-jwt
-  ```
-  
+```
+$ git clone https://github.com/<your-user>/node-es6-jwt
+```
+
+4. Navigate into the folder
+
+```
+$ cd node-es6-jwt
+```
+
 5. Install NPM dependencies
 
-  ```
-  $ npm install
-  ```
-  
+```
+$ npm install
+```
+
 6. Run the project
 
-  ```
-  $ node index.js
-  ```
-  
+```
+$ node index.js
+```
+
 7. Or use `nodemon` for live-reload
-  
-  ```
-  $ npm start
-  ```
-  
-  > `npm start` will run `nodemon index.js`.
-  
+
+```
+$ npm start
+```
+
+> `npm start` will run `nodemon index.js`.
+
 8. Navigate to `http://localhost:8000/api-status` in your browser to check you're seing the following response
 
-  ```javascript
-  { "status": "ok" }
-  ```
+```javascript
+{ "status": "ok" }
+```
 
-  > The port can be changed by the setting the environment variable `PORT`
+> The port can be changed by the setting the environment variable `PORT`
 
 9. If you want to execute the tests
 
