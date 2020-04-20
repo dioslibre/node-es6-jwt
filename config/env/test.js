@@ -2,7 +2,7 @@ module.exports = {
   postgres: {
     host: "localhost",
     port: 5432,
-    database: "project-habous",
+    database: "sig-habous",
   },
   jwt: {
     jwtSecret: "$eCrEt",
